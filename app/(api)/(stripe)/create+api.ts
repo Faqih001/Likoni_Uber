@@ -53,6 +53,7 @@ export async function POST(request: Request) {
     },
   });
 
+  // Return the payment intent, ephemeral key, and customer ID in the response
   return new Response(
     JSON.stringify({
       paymentIntent: paymentIntent,
