@@ -23,6 +23,7 @@ export async function POST(request: Request) {
       );
     }
 
+    // Attach the payment method to the customer and confirm the payment intent
     const paymentMethod = await stripe.paymentMethods.attach(
       payment_method_id,
       { customer: customer_id },
