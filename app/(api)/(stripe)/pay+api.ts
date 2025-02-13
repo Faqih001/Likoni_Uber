@@ -1,5 +1,6 @@
 import { Stripe } from "stripe";
 
+// Create a new instance of the Stripe class with your secret key from the environment
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 export async function POST(request: Request) {
