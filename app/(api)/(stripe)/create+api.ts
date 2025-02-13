@@ -36,6 +36,7 @@ export async function POST(request: Request) {
     customer = newCustomer;
   }
 
+  // Create an ephemeral key for the customer to authenticate the payment
   const ephemeralKey = await stripe.ephemeralKeys.create(
     { customer: customer.id },
     { apiVersion: "2024-06-20" },
