@@ -1,5 +1,6 @@
 import { Stripe } from "stripe";
 
+// Stripe API Key is required to be set in the environment variables of the Cloudflare Worker script
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 export async function POST(request: Request) {
