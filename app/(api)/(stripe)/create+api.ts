@@ -3,6 +3,7 @@ import { Stripe } from "stripe";
 // Stripe API Key is required to be set in the environment variables of the Cloudflare Worker script
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
+// You can set it using the wrangler CLI or the Cloudflare dashboard under the "Workers" section
 export async function POST(request: Request) {
   const body = await request.json();
   const { name, email, amount } = body;
