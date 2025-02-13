@@ -3,6 +3,7 @@ import { Stripe } from "stripe";
 // Create a new instance of the Stripe class with your secret key from the environment
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
+// Handle the POST request to the endpoint to confirm the payment intent
 export async function POST(request: Request) {
   try {
     const body = await request.json();
