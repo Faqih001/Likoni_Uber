@@ -32,6 +32,7 @@ export async function POST(request: Request) {
       email,
     });
 
+    // If the customer does not exist, create a new customer object
     customer = newCustomer;
   }
 
