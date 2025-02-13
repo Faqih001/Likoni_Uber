@@ -17,6 +17,7 @@ export async function POST(request: Request) {
     });
   }
 
+  // Check if the email is valid using a regex pattern
   let customer;
   const doesCustomerExist = await stripe.customers.list({
     email,
