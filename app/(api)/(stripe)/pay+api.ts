@@ -5,6 +5,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 // Handle the POST request to the endpoint to confirm the payment intent
 export async function POST(request: Request) {
+
+  // Try to parse the request body as JSON and extract the required fields
   try {
     const body = await request.json();
     const { payment_method_id, payment_intent_id, customer_id, client_secret } =
