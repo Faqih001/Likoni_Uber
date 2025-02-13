@@ -7,6 +7,7 @@ export async function GET(request: Request, { id }: { id: string }) {
   if (!id)
     return Response.json({ error: "Missing required fields" }, { status: 400 });
 
+  // Fetch the recent rides for the user from the database and return the response to the client
   try {
     const sql = neon(`${process.env.DATABASE_URL}`);
     const response = await sql`
