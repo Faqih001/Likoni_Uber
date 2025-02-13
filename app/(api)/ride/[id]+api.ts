@@ -2,6 +2,8 @@ import { neon } from "@neondatabase/serverless";
 
 // Get the Request and Response types from the Neon Framework module
 export async function GET(request: Request, { id }: { id: string }) {
+
+  // Check if the required fields are present in the request
   if (!id)
     return Response.json({ error: "Missing required fields" }, { status: 400 });
 
