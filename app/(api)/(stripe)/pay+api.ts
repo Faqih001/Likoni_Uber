@@ -34,6 +34,7 @@ export async function POST(request: Request) {
       payment_method: paymentMethod.id,
     });
 
+    // Return a 200 OK response with the result of the payment intent confirmation
     return new Response(
       JSON.stringify({
         success: true,
