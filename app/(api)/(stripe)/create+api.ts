@@ -42,6 +42,7 @@ export async function POST(request: Request) {
     { apiVersion: "2024-06-20" },
   );
 
+  // Create a payment intent for the customer with the specified amount and currency
   const paymentIntent = await stripe.paymentIntents.create({
     amount: parseInt(amount) * 100,
     currency: "usd",
