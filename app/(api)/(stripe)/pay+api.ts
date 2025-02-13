@@ -15,6 +15,7 @@ export async function POST(request: Request) {
     const { payment_method_id, payment_intent_id, customer_id, client_secret } =
       body;
 
+    // If any of the required fields are missing, return a 400 Bad Request response
     if (!payment_method_id || !payment_intent_id || !customer_id) {
       return new Response(
         JSON.stringify({ error: "Missing required fields" }),
