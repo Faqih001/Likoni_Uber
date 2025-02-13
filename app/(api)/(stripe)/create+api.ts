@@ -5,6 +5,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 // You can set it using the wrangler CLI or the Cloudflare dashboard under the "Workers" section
 export async function POST(request: Request) {
+
+  // Parse the request body to get the name, email, and amount
   const body = await request.json();
   const { name, email, amount } = body;
 
