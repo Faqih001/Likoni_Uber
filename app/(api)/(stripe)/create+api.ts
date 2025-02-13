@@ -10,6 +10,7 @@ export async function POST(request: Request) {
   const body = await request.json();
   const { name, email, amount } = body;
 
+  // Check if the required fields are present in the request body
   if (!name || !email || !amount) {
     return new Response(JSON.stringify({ error: "Missing required fields" }), {
       status: 400,
