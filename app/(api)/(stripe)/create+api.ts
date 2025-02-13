@@ -23,6 +23,7 @@ export async function POST(request: Request) {
     email,
   });
 
+  // If the customer already exists, use the existing customer object to create the payment intent
   if (doesCustomerExist.data.length > 0) {
     customer = doesCustomerExist.data[0];
   } else {
