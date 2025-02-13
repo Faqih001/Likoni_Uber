@@ -8,6 +8,7 @@ export async function POST(request: Request) {
 
   // Try to parse the request body as JSON and extract the required fields
   try {
+    // Parse the request body as JSON and extract the required fields from it
     const body = await request.json();
     const { payment_method_id, payment_intent_id, customer_id, client_secret } =
       body;
