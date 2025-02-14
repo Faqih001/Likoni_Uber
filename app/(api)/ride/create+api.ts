@@ -77,6 +77,7 @@ export async function POST(request: Request) {
       RETURNING *;
     `;
 
+    // Return the response to the client
     return Response.json({ data: response[0] }, { status: 201 });
   } catch (error) {
     console.error("Error inserting data into recent_rides:", error);
