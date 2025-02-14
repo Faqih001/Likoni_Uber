@@ -5,7 +5,10 @@ export async function POST(request: Request) {
 
   // Try to parse the request body as JSON and extract the required fields
   try {
+    // Parse the request body as JSON
     const body = await request.json();
+
+    //
     const {
       origin_address,
       destination_address,
