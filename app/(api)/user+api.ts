@@ -12,6 +12,7 @@ export async function POST(request: Request) {
     // Parse the request body as JSON and extract the name, email, and clerkId
     const { name, email, clerkId } = await request.json();
 
+    // Check if the required fields are present in the request body
     if (!name || !email || !clerkId) {
       return Response.json(
         { error: "Missing required fields" },
