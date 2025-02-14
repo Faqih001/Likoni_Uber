@@ -1,5 +1,6 @@
 import { neon } from "@neondatabase/serverless";
 
+// Handle the POST request to insert data into the recent_rides table
 export async function POST(request: Request) {
   try {
     const body = await request.json();
