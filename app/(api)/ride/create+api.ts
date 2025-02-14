@@ -80,6 +80,7 @@ export async function POST(request: Request) {
     // Return the response to the client
     return Response.json({ data: response[0] }, { status: 201 });
   } catch (error) {
+    // Return an error response if there was an error inserting the data
     console.error("Error inserting data into recent_rides:", error);
     return Response.json({ error: "Internal Server Error" }, { status: 500 });
   }
