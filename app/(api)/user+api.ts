@@ -8,6 +8,8 @@ export async function POST(request: Request) {
 
     // Check if the request is authorized to access this endpoint
     const sql = neon(`${process.env.DATABASE_URL}`);
+
+    // Parse the request body as JSON and extract the name, email, and clerkId
     const { name, email, clerkId } = await request.json();
 
     if (!name || !email || !clerkId) {
