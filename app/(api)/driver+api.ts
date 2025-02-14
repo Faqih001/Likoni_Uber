@@ -1,5 +1,6 @@
 import { neon } from "@neondatabase/serverless";
 
+// GET /api/driver (get all drivers) - returns all drivers in the database
 export async function GET(request: Request) {
   try {
     const sql = neon(`${process.env.DATABASE_URL}`);
