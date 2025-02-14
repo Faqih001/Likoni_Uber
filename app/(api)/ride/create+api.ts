@@ -44,6 +44,7 @@ export async function POST(request: Request) {
       );
     }
 
+    // Insert the data into the recent_rides table 
     const sql = neon(`${process.env.DATABASE_URL}`);
 
     const response = await sql`
