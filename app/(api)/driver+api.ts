@@ -12,6 +12,7 @@ export async function GET(request: Request) {
     // Return the drivers as a JSON response
     return Response.json({ data: response });
   } catch (error) {
+    // Log the error and return a 500 status code
     console.error("Error fetching drivers:", error);
     return Response.json({ error: "Internal Server Error" }, { status: 500 });
   }
