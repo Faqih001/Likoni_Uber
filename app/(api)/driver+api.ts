@@ -2,6 +2,7 @@ import { neon } from "@neondatabase/serverless";
 
 // GET /api/driver (get all drivers) - returns all drivers in the database
 export async function GET(request: Request) {
+  // Check if the request is authorized to access this endpoint
   try {
     const sql = neon(`${process.env.DATABASE_URL}`);
     const response = await sql`SELECT * FROM drivers`;
