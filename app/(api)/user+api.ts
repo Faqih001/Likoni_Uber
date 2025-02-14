@@ -34,6 +34,7 @@ export async function POST(request: Request) {
         ${clerkId}
      );`;
 
+    // Return a 201 Created response with the new user
     return new Response(JSON.stringify({ data: response }), {
       status: 201,
     });
