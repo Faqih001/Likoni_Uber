@@ -37,6 +37,7 @@ export async function POST(request: Request) {
       !driver_id ||
       !user_id
     ) {
+      // Return an error response if any of the required fields are missing
       return Response.json(
         { error: "Missing required fields" },
         { status: 400 },
