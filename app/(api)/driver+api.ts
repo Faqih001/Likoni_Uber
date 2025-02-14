@@ -9,6 +9,7 @@ export async function GET(request: Request) {
     const sql = neon(`${process.env.DATABASE_URL}`);
     const response = await sql`SELECT * FROM drivers`;
 
+    // Return the drivers as a JSON response
     return Response.json({ data: response });
   } catch (error) {
     console.error("Error fetching drivers:", error);
