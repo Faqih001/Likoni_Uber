@@ -2,6 +2,8 @@ import { neon } from "@neondatabase/serverless";
 
 // POST /api/user (create a new user) - creates a new user in the database with the given name, email, and clerkId
 export async function POST(request: Request) {
+
+  // Check if the request is authorized to access this endpoint
   try {
     const sql = neon(`${process.env.DATABASE_URL}`);
     const { name, email, clerkId } = await request.json();
