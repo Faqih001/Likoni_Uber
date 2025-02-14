@@ -14,6 +14,7 @@ export async function POST(request: Request) {
 
     // Check if the required fields are present in the request body
     if (!name || !email || !clerkId) {
+      // Return a 400 Bad Request response if the required fields are missing
       return Response.json(
         { error: "Missing required fields" },
         { status: 400 },
