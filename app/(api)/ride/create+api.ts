@@ -23,6 +23,7 @@ export async function POST(request: Request) {
       user_id,
     } = body;
 
+    // Check if any of the required fields are missing
     if (
       !origin_address ||
       !destination_address ||
