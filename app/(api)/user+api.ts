@@ -21,6 +21,7 @@ export async function POST(request: Request) {
       );
     }
 
+    // Insert the new user into the database
     const response = await sql`
       INSERT INTO users (
         name, 
