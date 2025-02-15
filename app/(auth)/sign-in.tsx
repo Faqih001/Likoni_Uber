@@ -25,6 +25,7 @@ const SignIn = () => {
     // Check if the Clerk SDK is loaded before calling the signIn function
     if (!isLoaded) return;
 
+    // Call the signIn function with the email and password values from the form state
     try {
       const signInAttempt = await signIn.create({
         identifier: form.email,
