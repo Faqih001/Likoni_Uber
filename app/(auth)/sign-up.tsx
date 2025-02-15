@@ -64,6 +64,8 @@ const SignUp = () => {
 
     // Check if the Clerk SDK is loaded before calling the signUp function
     if (!isLoaded) return;
+
+    // Call the attemptEmailAddressVerification function with the verification code
     try {
       const completeSignUp = await signUp.attemptEmailAddressVerification({
         code: verification.code,
