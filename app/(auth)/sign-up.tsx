@@ -61,6 +61,8 @@ const SignUp = () => {
 
   // Function to handle the verification process and complete the sign up
   const onPressVerify = async () => {
+
+    // Check if the Clerk SDK is loaded before calling the signUp function
     if (!isLoaded) return;
     try {
       const completeSignUp = await signUp.attemptEmailAddressVerification({
