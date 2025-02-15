@@ -20,6 +20,7 @@ const SignIn = () => {
     password: "",
   });
 
+  // Function to sign in a user with email and password using Clerk's signIn function
   const onSignInPress = useCallback(async () => {
     if (!isLoaded) return;
 
