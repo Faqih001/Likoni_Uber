@@ -41,6 +41,7 @@ const SignUp = () => {
 
     // Call the signUp function with the email and password values from the form state
     try {
+      // The signUp function returns a promise that resolves to the created user
       await signUp.create({
         emailAddress: form.email,
         password: form.password,
