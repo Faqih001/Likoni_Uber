@@ -48,6 +48,7 @@ const SignIn = () => {
     }
   }, [isLoaded, form]);
 
+  // Render the sign in screen with email and password input fields, sign in button, and OAuth buttons
   return (
     <ScrollView className="flex-1 bg-white">
       <View className="flex-1 bg-white">
