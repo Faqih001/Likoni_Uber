@@ -12,6 +12,8 @@ import { fetchAPI } from "@/lib/fetch";
 
 // Sign Up screen component for the app
 const SignUp = () => {
+
+  // Clerk's useSignUp hook provides the signUp function to sign up a user
   const { isLoaded, signUp, setActive } = useSignUp();
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
