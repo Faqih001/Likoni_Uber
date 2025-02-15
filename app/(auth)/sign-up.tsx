@@ -19,6 +19,7 @@ const SignUp = () => {
   // State to manage the verification process
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
+  // State to manage the form data and verification code
   const [form, setForm] = useState({
     name: "",
     email: "",
