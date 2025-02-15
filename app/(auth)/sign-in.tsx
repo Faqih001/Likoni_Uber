@@ -27,6 +27,7 @@ const SignIn = () => {
 
     // Call the signIn function with the email and password values from the form state
     try {
+      // The signIn function returns a signInAttempt object with the status and createdSessionId properties
       const signInAttempt = await signIn.create({
         identifier: form.email,
         password: form.password,
