@@ -15,6 +15,8 @@ const SignUp = () => {
 
   // Clerk's useSignUp hook provides the signUp function to sign up a user
   const { isLoaded, signUp, setActive } = useSignUp();
+
+  // State to manage the verification process
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const [form, setForm] = useState({
