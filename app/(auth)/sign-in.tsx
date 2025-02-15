@@ -14,6 +14,7 @@ const SignIn = () => {
   // Clerk's useSignIn hook provides the signIn function to sign in a user and the setActive function to set the active session
   const { signIn, setActive, isLoaded } = useSignIn();
 
+  // Form state to store email and password values from input fields
   const [form, setForm] = useState({
     email: "",
     password: "",
