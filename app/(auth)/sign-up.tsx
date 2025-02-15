@@ -58,6 +58,8 @@ const SignUp = () => {
       Alert.alert("Error", err.errors[0].longMessage);
     }
   };
+
+  // Function to handle the verification process and complete the sign up
   const onPressVerify = async () => {
     if (!isLoaded) return;
     try {
