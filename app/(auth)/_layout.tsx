@@ -1,5 +1,6 @@
 import { Stack } from "expo-router";
 
+// Auth Layout for sign in and sign up
 const Layout = () => {
   return (
     <Stack>
