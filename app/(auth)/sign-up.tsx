@@ -38,6 +38,8 @@ const SignUp = () => {
 
     // Check if the Clerk SDK is loaded before calling the signUp function
     if (!isLoaded) return;
+
+    // Call the signUp function with the email and password values from the form state
     try {
       await signUp.create({
         emailAddress: form.email,
