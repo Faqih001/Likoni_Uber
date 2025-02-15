@@ -8,6 +8,7 @@ import InputField from "@/components/InputField";
 import OAuth from "@/components/OAuth";
 import { icons, images } from "@/constants";
 
+// Sign in screen component with email and password fields and sign in button
 const SignIn = () => {
   const { signIn, setActive, isLoaded } = useSignIn();
 
