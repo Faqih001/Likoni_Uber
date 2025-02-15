@@ -33,6 +33,7 @@ const SignIn = () => {
         password: form.password,
       });
 
+      // If the status is "complete", set the active session and navigate to the home screen
       if (signInAttempt.status === "complete") {
         await setActive({ session: signInAttempt.createdSessionId });
         router.replace("/(root)/(tabs)/home");
