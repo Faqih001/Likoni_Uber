@@ -22,6 +22,7 @@ const SignIn = () => {
 
   // Function to sign in a user with email and password using Clerk's signIn function
   const onSignInPress = useCallback(async () => {
+    // Check if the Clerk SDK is loaded before calling the signIn function
     if (!isLoaded) return;
 
     try {
