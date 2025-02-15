@@ -10,6 +10,8 @@ import { icons, images } from "@/constants";
 
 // Sign in screen component with email and password fields and sign in button
 const SignIn = () => {
+
+  // Clerk's useSignIn hook provides the signIn function to sign in a user and the setActive function to set the active session
   const { signIn, setActive, isLoaded } = useSignIn();
 
   const [form, setForm] = useState({
