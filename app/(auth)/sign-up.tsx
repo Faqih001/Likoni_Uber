@@ -25,6 +25,8 @@ const SignUp = () => {
     email: "",
     password: "",
   });
+
+  // State to manage the verification process and code
   const [verification, setVerification] = useState({
     state: "default",
     error: "",
