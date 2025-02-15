@@ -35,6 +35,8 @@ const SignUp = () => {
 
   // Function to handle the sign up process and send the verification code
   const onSignUpPress = async () => {
+
+    // Check if the Clerk SDK is loaded before calling the signUp function
     if (!isLoaded) return;
     try {
       await signUp.create({
