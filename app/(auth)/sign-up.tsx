@@ -33,6 +33,7 @@ const SignUp = () => {
     code: "",
   });
 
+  // Function to handle the sign up process and send the verification code
   const onSignUpPress = async () => {
     if (!isLoaded) return;
     try {
