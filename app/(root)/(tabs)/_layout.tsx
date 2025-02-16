@@ -27,6 +27,7 @@ const TabIcon = ({
   </View>
 );
 
+// Bottom tab navigation bar layout with tab icons and background color
 export default function Layout() {
   return (
     <Tabs
