@@ -3,6 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import { images } from "@/constants";
 
+// Chat screen component with message image and text when no messages
 const Chat = () => {
   return (
     <SafeAreaView className="flex-1 bg-white p-5">
