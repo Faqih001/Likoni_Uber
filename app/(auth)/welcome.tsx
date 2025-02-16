@@ -11,6 +11,8 @@ import { onboarding } from "@/constants";
 const Home = () => {
   // Ref for swiper component to scroll to next slide
   const swiperRef = useRef<Swiper>(null);
+
+  // State for active slide index
   const [activeIndex, setActiveIndex] = useState(0);
 
   const isLastSlide = activeIndex === onboarding.length - 1;
