@@ -21,6 +21,7 @@ import { useFetch } from "@/lib/fetch";
 import { useLocationStore } from "@/store";
 import { Ride } from "@/types/type";
 
+// Home screen component with recent rides and current location map
 const Home = () => {
   const { user } = useUser();
   const { signOut } = useAuth();
