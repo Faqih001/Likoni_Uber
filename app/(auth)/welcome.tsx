@@ -18,6 +18,7 @@ const Home = () => {
   // Check if the current slide is the last slide
   const isLastSlide = activeIndex === onboarding.length - 1;
 
+  // Render onboarding slides with swiper component
   return (
     <SafeAreaView className="flex h-full items-center justify-between bg-white">
       <TouchableOpacity
