@@ -67,6 +67,7 @@ const SignUp = () => {
 
     // Call the attemptEmailAddressVerification function with the verification code
     try {
+      // The attemptEmailAddressVerification function returns a promise that resolves to the created user
       const completeSignUp = await signUp.attemptEmailAddressVerification({
         code: verification.code,
       });
