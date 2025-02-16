@@ -74,6 +74,7 @@ const SignUp = () => {
 
       // If the status is complete, create a user in the backend and set the active session
       if (completeSignUp.status === "complete") {
+        // Call the fetchAPI function to create a user in the backend
         await fetchAPI("/(api)/user", {
           method: "POST",
           body: JSON.stringify({
