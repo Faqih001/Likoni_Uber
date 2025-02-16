@@ -23,6 +23,7 @@ import { Ride } from "@/types/type";
 
 // Home screen component with recent rides and current location map
 const Home = () => {
+  // Get user and sign out function from Clerk
   const { user } = useUser();
   const { signOut } = useAuth();
 
