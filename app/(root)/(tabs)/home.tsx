@@ -25,6 +25,8 @@ import { Ride } from "@/types/type";
 const Home = () => {
   // Get user and sign out function from Clerk
   const { user } = useUser();
+
+  // Sign out function from Clerk
   const { signOut } = useAuth();
 
   const { setUserLocation, setDestinationLocation } = useLocationStore();
