@@ -32,6 +32,7 @@ const Home = () => {
   // Get user location and destination location from store
   const { setUserLocation, setDestinationLocation } = useLocationStore();
 
+  // Sign out function from Clerk and redirect to sign in page
   const handleSignOut = () => {
     signOut();
     router.replace("/(auth)/sign-in");
