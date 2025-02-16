@@ -38,6 +38,7 @@ const Home = () => {
     router.replace("/(auth)/sign-in");
   };
 
+  // Get user location permission and set user location
   const [hasPermission, setHasPermission] = useState<boolean>(false);
 
   const {
