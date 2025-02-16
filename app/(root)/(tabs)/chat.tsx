@@ -5,6 +5,7 @@ import { images } from "@/constants";
 
 // Chat screen component with message image and text when no messages
 const Chat = () => {
+  // Chat screen component with message image and text when no messages
   return (
     <SafeAreaView className="flex-1 bg-white p-5">
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
