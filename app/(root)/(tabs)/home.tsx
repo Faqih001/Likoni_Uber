@@ -29,6 +29,7 @@ const Home = () => {
   // Sign out function from Clerk
   const { signOut } = useAuth();
 
+  // Get user location and destination location from store
   const { setUserLocation, setDestinationLocation } = useLocationStore();
 
   const handleSignOut = () => {
