@@ -3,6 +3,7 @@ import { Image, ImageSourcePropType, View } from "react-native";
 
 import { icons } from "@/constants";
 
+// Tab icon component for bottom tab navigation bar with icon and background color
 const TabIcon = ({
   source,
   focused,
