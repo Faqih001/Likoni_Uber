@@ -7,6 +7,7 @@ import Swiper from "react-native-swiper";
 import CustomButton from "@/components/CustomButton";
 import { onboarding } from "@/constants";
 
+// Home screen for onboarding slides with swiper component and custom button
 const Home = () => {
   const swiperRef = useRef<Swiper>(null);
   const [activeIndex, setActiveIndex] = useState(0);
