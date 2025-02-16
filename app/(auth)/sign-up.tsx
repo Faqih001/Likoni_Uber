@@ -110,6 +110,8 @@ const SignUp = () => {
       });
     }
   };
+
+  // Return the sign up screen UI with the form fields and buttons
   return (
     <ScrollView className="flex-1 bg-white">
       <View className="flex-1 bg-white">
