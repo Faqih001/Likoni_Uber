@@ -15,6 +15,7 @@ const Home = () => {
   // State for active slide index
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Check if the current slide is the last slide
   const isLastSlide = activeIndex === onboarding.length - 1;
 
   return (
