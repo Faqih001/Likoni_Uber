@@ -9,7 +9,6 @@ import { onboarding } from "@/constants";
 
 // Home screen for onboarding slides with swiper component and custom button
 const Home = () => {
-
   // Ref for swiper component to scroll to next slide
   const swiperRef = useRef<Swiper>(null);
   const [activeIndex, setActiveIndex] = useState(0);
