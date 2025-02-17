@@ -12,6 +12,8 @@ import { useDriverStore, useLocationStore } from "@/store";
 const BookRide = () => {
   // Get the user object from Clerk to fetch user information
   const { user } = useUser();
+
+  // Get the user and destination address from the store
   const { userAddress, destinationAddress } = useLocationStore();
   const { drivers, selectedDriver } = useDriverStore();
 
