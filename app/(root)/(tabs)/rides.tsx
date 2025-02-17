@@ -7,6 +7,7 @@ import { images } from "@/constants";
 import { useFetch } from "@/lib/fetch";
 import { Ride } from "@/types/type";
 
+// Rides screen component to display user rides information and recent rides
 const Rides = () => {
   const { user } = useUser();
 
