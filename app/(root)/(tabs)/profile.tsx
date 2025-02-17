@@ -9,6 +9,7 @@ const Profile = () => {
   // Get the user object from Clerk
   const { user } = useUser();
 
+  // Render the profile screen with user information
   return (
     <SafeAreaView className="flex-1">
       <ScrollView
