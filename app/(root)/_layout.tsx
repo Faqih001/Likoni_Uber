@@ -1,5 +1,6 @@
 import { Stack } from "expo-router";
 
+// Layout component to define the navigation stack for the app
 const Layout = () => {
   return (
     <Stack>
