@@ -10,6 +10,7 @@ import { useDriverStore, useLocationStore } from "@/store";
 
 // Book ride screen component to book a ride with the selected driver
 const BookRide = () => {
+  // Get the user object from Clerk to fetch user information
   const { user } = useUser();
   const { userAddress, destinationAddress } = useLocationStore();
   const { drivers, selectedDriver } = useDriverStore();
