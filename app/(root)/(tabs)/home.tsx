@@ -70,6 +70,7 @@ const Home = () => {
         longitude: location.coords?.longitude!,
       });
 
+      // Set user location in the store with latitude, longitude, and address
       setUserLocation({
         latitude: location.coords?.latitude,
         longitude: location.coords?.longitude,
