@@ -41,6 +41,7 @@ const Home = () => {
   // Get user location permission and set user location
   const [hasPermission, setHasPermission] = useState<boolean>(false);
 
+  // Get recent rides for the user from the API
   const {
     data: recentRides,
     loading,
