@@ -24,7 +24,7 @@ const BookRide = () => {
     (driver) => +driver.id === selectedDriver,
   )[0];
 
-  //
+  // Return the book ride screen
   return (
     <StripeProvider
       publishableKey={process.env.EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY!}
