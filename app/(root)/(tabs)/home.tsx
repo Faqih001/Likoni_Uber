@@ -50,6 +50,7 @@ const Home = () => {
 
   // Get user location permission and set user location on component mount
   useEffect(() => {
+    // Get user location permission and set user location
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
