@@ -52,6 +52,7 @@ const Home = () => {
   useEffect(() => {
     // Get user location permission and set user location
     (async () => {
+      // Get location permission from the user using requestForegroundPermissionsAsync
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
         setHasPermission(false);
