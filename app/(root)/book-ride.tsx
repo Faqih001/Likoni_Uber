@@ -15,8 +15,11 @@ const BookRide = () => {
 
   // Get the user and destination address from the store
   const { userAddress, destinationAddress } = useLocationStore();
+
+  // Get the drivers and selected driver from the store
   const { drivers, selectedDriver } = useDriverStore();
 
+  //
   const driverDetails = drivers?.filter(
     (driver) => +driver.id === selectedDriver,
   )[0];
