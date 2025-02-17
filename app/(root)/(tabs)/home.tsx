@@ -90,6 +90,7 @@ const Home = () => {
     router.push("/(root)/find-ride");
   };
 
+  // Render the Home screen with recent rides and current location map
   return (
     <SafeAreaView className="bg-general-500">
       <FlatList
