@@ -48,6 +48,7 @@ const Home = () => {
     error,
   } = useFetch<Ride[]>(`/(api)/ride/${user?.id}`);
 
+  // Get user location permission and set user location on component mount
   useEffect(() => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
