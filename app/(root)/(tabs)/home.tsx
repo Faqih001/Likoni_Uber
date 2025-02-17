@@ -61,6 +61,7 @@ const Home = () => {
         return;
       }
 
+      // If the location permission is granted, set hasPermission to true
       let location = await Location.getCurrentPositionAsync({});
 
       const address = await Location.reverseGeocodeAsync({
