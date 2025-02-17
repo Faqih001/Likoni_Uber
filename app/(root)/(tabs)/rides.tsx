@@ -9,6 +9,7 @@ import { Ride } from "@/types/type";
 
 // Rides screen component to display user rides information and recent rides
 const Rides = () => {
+  // Get the user object from Clerk to fetch user rides
   const { user } = useUser();
 
   const {
