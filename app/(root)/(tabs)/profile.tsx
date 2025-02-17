@@ -4,7 +4,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import InputField from "@/components/InputField";
 
+// Profile screen component to display user profile information
 const Profile = () => {
+  // Get the user object from Clerk
   const { user } = useUser();
 
   return (
