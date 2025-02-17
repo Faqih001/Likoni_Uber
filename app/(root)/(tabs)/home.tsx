@@ -79,6 +79,7 @@ const Home = () => {
     })();
   }, []);
 
+  // Handle destination press and set destination location in the store
   const handleDestinationPress = (location: {
     latitude: number;
     longitude: number;
