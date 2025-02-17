@@ -54,6 +54,8 @@ const Home = () => {
     (async () => {
       // Get location permission from the user using requestForegroundPermissionsAsync
       let { status } = await Location.requestForegroundPermissionsAsync();
+
+      // If the location permission is not granted, set hasPermission to false
       if (status !== "granted") {
         setHasPermission(false);
         return;
