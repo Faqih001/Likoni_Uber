@@ -19,11 +19,12 @@ const BookRide = () => {
   // Get the drivers and selected driver from the store
   const { drivers, selectedDriver } = useDriverStore();
 
-  //
+  // Get the driver details from the drivers array
   const driverDetails = drivers?.filter(
     (driver) => +driver.id === selectedDriver,
   )[0];
 
+  //
   return (
     <StripeProvider
       publishableKey={process.env.EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY!}
