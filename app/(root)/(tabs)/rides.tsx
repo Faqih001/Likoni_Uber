@@ -12,6 +12,7 @@ const Rides = () => {
   // Get the user object from Clerk to fetch user rides
   const { user } = useUser();
 
+  // Get recent rides for the user from the API
   const {
     data: recentRides,
     loading,
