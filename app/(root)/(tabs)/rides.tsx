@@ -19,6 +19,7 @@ const Rides = () => {
     error,
   } = useFetch<Ride[]>(`/(api)/ride/${user?.id}`);
 
+  // Render the rides screen with user rides information
   return (
     <SafeAreaView className="flex-1 bg-white">
       <FlatList
