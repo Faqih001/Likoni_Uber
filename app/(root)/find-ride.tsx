@@ -7,6 +7,7 @@ import RideLayout from "@/components/RideLayout";
 import { icons } from "@/constants";
 import { useLocationStore } from "@/store";
 
+// Find ride screen component to find a ride from the user location to the destination
 const FindRide = () => {
   const {
     userAddress,
