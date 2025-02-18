@@ -18,6 +18,7 @@ const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
   }
 };
 
+// Get the text color based on the variant prop
 const getTextVariantStyle = (variant: ButtonProps["textVariant"]) => {
   switch (variant) {
     case "primary":
@@ -33,6 +34,7 @@ const getTextVariantStyle = (variant: ButtonProps["textVariant"]) => {
   }
 };
 
+//
 const CustomButton = ({
   onPress,
   title,
