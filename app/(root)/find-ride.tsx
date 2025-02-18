@@ -17,6 +17,7 @@ const FindRide = () => {
     setUserLocation,
   } = useLocationStore();
 
+  // Return the find ride screen component with the user and destination address
   return (
     <RideLayout title="Ride">
       <View className="my-3">
