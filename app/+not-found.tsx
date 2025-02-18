@@ -16,6 +16,7 @@ export default function NotFoundScreen() {
   );
 }
 
+// Styles are defined in a separate object to keep the component clean.
 const styles = StyleSheet.create({
   container: {
     flex: 1,
