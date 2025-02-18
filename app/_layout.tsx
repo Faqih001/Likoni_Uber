@@ -26,6 +26,7 @@ LogBox.ignoreLogs(["Clerk:"]);
 
 // Define the RootLayout component that wraps the ClerkProvider
 export default function RootLayout() {
+  // Load the Jakarta font family before rendering the app
   const [loaded] = useFonts({
     "Jakarta-Bold": require("../assets/fonts/PlusJakartaSans-Bold.ttf"),
     "Jakarta-ExtraBold": require("../assets/fonts/PlusJakartaSans-ExtraBold.ttf"),
