@@ -37,6 +37,7 @@ export default function RootLayout() {
     "Jakarta-SemiBold": require("../assets/fonts/PlusJakartaSans-SemiBold.ttf"),
   });
 
+  // Hide the splash screen when the fonts are loaded
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
