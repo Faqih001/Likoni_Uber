@@ -5,6 +5,7 @@ import { icons } from "@/constants";
 import { formatTime } from "@/lib/utils";
 import { DriverCardProps } from "@/types/type";
 
+// Driver card component to display driver details
 const DriverCard = ({ item, selected, setSelected }: DriverCardProps) => {
   return (
     <TouchableOpacity
