@@ -12,6 +12,7 @@ const ConfirmRide = () => {
   // Get the drivers, selected driver and set selected driver from the store
   const { drivers, selectedDriver, setSelectedDriver } = useDriverStore();
 
+  // Return the confirm ride screen
   return (
     <RideLayout title={"Choose a Rider"} snapPoints={["65%", "85%"]}>
       <FlatList
