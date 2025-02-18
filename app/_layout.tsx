@@ -14,6 +14,7 @@ SplashScreen.preventAutoHideAsync();
 // Get the Clerk public key from the environment variables
 const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY!;
 
+// Throw an error if the public key is missing
 if (!publishableKey) {
   throw new Error(
     "Missing Publishable Key. Please set EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY in your .env",
