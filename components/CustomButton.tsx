@@ -2,6 +2,7 @@ import { TouchableOpacity, Text } from "react-native";
 
 import { ButtonProps } from "@/types/type";
 
+// Get the background color based on the variant prop
 const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
   switch (variant) {
     case "secondary":
