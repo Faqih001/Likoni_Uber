@@ -24,6 +24,7 @@ if (!publishableKey) {
 // Ignore the Clerk warning about the missing public key
 LogBox.ignoreLogs(["Clerk:"]);
 
+// Define the RootLayout component that wraps the ClerkProvider
 export default function RootLayout() {
   const [loaded] = useFonts({
     "Jakarta-Bold": require("../assets/fonts/PlusJakartaSans-Bold.ttf"),
