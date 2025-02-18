@@ -34,7 +34,7 @@ const getTextVariantStyle = (variant: ButtonProps["textVariant"]) => {
   }
 };
 
-//
+// Custom button component with different variants and icons
 const CustomButton = ({
   onPress,
   title,
