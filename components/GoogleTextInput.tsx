@@ -7,6 +7,7 @@ import { GoogleInputProps } from "@/types/type";
 // Google text input component to search for places
 const googlePlacesApiKey = process.env.EXPO_PUBLIC_PLACES_API_KEY;
 
+// Google text input component to search for places
 const GoogleTextInput = ({
   icon,
   initialLocation,
