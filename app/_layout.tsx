@@ -21,6 +21,7 @@ if (!publishableKey) {
   );
 }
 
+// Ignore the Clerk warning about the missing public key
 LogBox.ignoreLogs(["Clerk:"]);
 
 export default function RootLayout() {
