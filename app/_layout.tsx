@@ -49,6 +49,7 @@ export default function RootLayout() {
     return null;
   }
 
+  // Return the ClerkProvider with the token cache and public key
   return (
     <ClerkProvider tokenCache={tokenCache} publishableKey={publishableKey}>
       <ClerkLoaded>
