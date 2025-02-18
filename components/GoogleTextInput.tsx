@@ -4,6 +4,7 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import { icons } from "@/constants";
 import { GoogleInputProps } from "@/types/type";
 
+// Google text input component to search for places
 const googlePlacesApiKey = process.env.EXPO_PUBLIC_PLACES_API_KEY;
 
 const GoogleTextInput = ({
