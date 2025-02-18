@@ -9,6 +9,7 @@ import { useLocationStore } from "@/store";
 
 // Find ride screen component to find a ride from the user location to the destination
 const FindRide = () => {
+  // Get the user and destination address from the store
   const {
     userAddress,
     destinationAddress,
