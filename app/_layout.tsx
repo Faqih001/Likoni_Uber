@@ -44,6 +44,7 @@ export default function RootLayout() {
     }
   }, [loaded]);
 
+  // Return null if the fonts are not loaded
   if (!loaded) {
     return null;
   }
