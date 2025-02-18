@@ -1,6 +1,7 @@
 import { Link, Stack } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
+// This screen is shown when a route doesn't match any of the defined routes.
 export default function NotFoundScreen() {
   return (
     <>
