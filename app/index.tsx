@@ -1,6 +1,7 @@
 import { useAuth } from "@clerk/clerk-expo";
 import { Redirect } from "expo-router";
 
+// This page is shown when the app is first loaded.
 const Page = () => {
   const { isSignedIn } = useAuth();
 
