@@ -8,6 +8,8 @@ import { useDriverStore } from "@/store";
 
 // Confirm Ride component to confirm the ride with the selected driver
 const ConfirmRide = () => {
+
+  // Get the drivers, selected driver and set selected driver from the store
   const { drivers, selectedDriver, setSelectedDriver } = useDriverStore();
 
   return (
