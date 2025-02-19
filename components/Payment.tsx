@@ -34,6 +34,8 @@ const Payment = ({
 
   // Get user ID from Clerk authentication
   const { userId } = useAuth();
+
+  // State to handle success modal visibility
   const [success, setSuccess] = useState<boolean>(false);
 
   const openPaymentSheet = async () => {
