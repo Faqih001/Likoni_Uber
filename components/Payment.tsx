@@ -56,6 +56,7 @@ const Payment = ({
 
   // Function to initialize payment sheet with payment details
   const initializePaymentSheet = async () => {
+    // Initialize payment sheet with payment details
     const { error } = await initPaymentSheet({
       merchantDisplayName: "Example, Inc.",
       intentConfiguration: {
