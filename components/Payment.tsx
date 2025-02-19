@@ -43,6 +43,7 @@ const Payment = ({
     // Initialize payment sheet with payment details
     await initializePaymentSheet();
 
+    // Present payment sheet to user for payment processing
     const { error } = await presentPaymentSheet();
 
     if (error) {
