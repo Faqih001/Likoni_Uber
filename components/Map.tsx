@@ -99,6 +99,7 @@ const Map = () => {
       </View>
     );
 
+  // Return the map component with the specified props
   return (
     <MapView
       provider={PROVIDER_DEFAULT}
