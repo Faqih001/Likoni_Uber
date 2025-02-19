@@ -8,6 +8,7 @@ import { googleOAuth } from "@/lib/auth";
 
 // OAuth component for Google sign-in using Clerk and OAuth
 const OAuth = () => {
+  // The useOAuth hook is used to start the OAuth flow with the specified strategy
   const { startOAuthFlow } = useOAuth({ strategy: "oauth_google" });
 
   const handleGoogleSignIn = async () => {
