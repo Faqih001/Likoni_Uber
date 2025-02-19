@@ -36,6 +36,7 @@ const Map = () => {
 
   // The useEffect hook is used to generate the markers from the driver data
   useEffect(() => {
+    // If the driver data is an array, generate the markers from the data
     if (Array.isArray(drivers)) {
       if (!userLatitude || !userLongitude) return;
 
