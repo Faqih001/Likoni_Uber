@@ -38,6 +38,7 @@ const Map = () => {
   useEffect(() => {
     // If the driver data is an array, generate the markers from the data
     if (Array.isArray(drivers)) {
+      // If the user's location is not available, return early
       if (!userLatitude || !userLongitude) return;
 
       const newMarkers = generateMarkersFromData({
