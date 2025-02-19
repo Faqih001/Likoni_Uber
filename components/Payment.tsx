@@ -19,6 +19,7 @@ const Payment = ({
   driverId,
   rideTime,
 }: PaymentProps) => {
+  // Stripe payment sheet hook to initialize and present payment sheet
   const { initPaymentSheet, presentPaymentSheet } = useStripe();
   const {
     userAddress,
