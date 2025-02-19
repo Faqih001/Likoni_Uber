@@ -84,6 +84,7 @@ const Map = () => {
 
   // If the data is loading or the user's location is not available, display a loading indicator
   if (loading || (!userLatitude && !userLongitude))
+    // Return the loading indicator component
     return (
       <View className="flex justify-between items-center w-full">
         <ActivityIndicator size="small" color="#000" />
