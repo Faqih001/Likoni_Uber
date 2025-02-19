@@ -82,6 +82,7 @@ const Map = () => {
     destinationLongitude,
   });
 
+  // If the data is loading or the user's location is not available, display a loading indicator
   if (loading || (!userLatitude && !userLongitude))
     return (
       <View className="flex justify-between items-center w-full">
