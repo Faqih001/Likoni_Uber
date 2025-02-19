@@ -21,6 +21,8 @@ const Payment = ({
 }: PaymentProps) => {
   // Stripe payment sheet hook to initialize and present payment sheet
   const { initPaymentSheet, presentPaymentSheet } = useStripe();
+
+  // Get user location and destination details from store
   const {
     userAddress,
     userLongitude,
