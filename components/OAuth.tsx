@@ -13,6 +13,7 @@ const OAuth = () => {
 
   // The handleGoogleSignIn function is used to handle the Google sign-in flow
   const handleGoogleSignIn = async () => {
+    // The googleOAuth function is used to start the Google OAuth flow
     const result = await googleOAuth(startOAuthFlow);
 
     if (result.code === "session_exists") {
