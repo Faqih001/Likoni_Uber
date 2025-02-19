@@ -41,6 +41,7 @@ const Map = () => {
       // If the user's location is not available, return early
       if (!userLatitude || !userLongitude) return;
 
+      // Generate the markers from the driver data
       const newMarkers = generateMarkersFromData({
         data: drivers,
         userLatitude,
