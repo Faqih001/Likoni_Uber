@@ -28,6 +28,7 @@ const Map = () => {
   // Driver data is fetched from the API and stored in the driver store using the useDriverStore hook
   const { selectedDriver, setDrivers } = useDriverStore();
 
+  // The useFetch hook is used to fetch the driver data from the API
   const { data: drivers, loading, error } = useFetch<Driver[]>("/(api)/driver");
   const [markers, setMarkers] = useState<MarkerData[]>([]);
 
