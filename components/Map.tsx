@@ -74,6 +74,7 @@ const Map = () => {
     }
   }, [markers, destinationLatitude, destinationLongitude]);
 
+  // The calculateRegion function is used to calculate the region for the map
   const region = calculateRegion({
     userLatitude,
     userLongitude,
