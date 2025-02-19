@@ -102,6 +102,7 @@ const Payment = ({
               }),
             });
 
+            // Create ride booking on server if payment is successful
             if (result.client_secret) {
               await fetchAPI("/(api)/ride/create", {
                 method: "POST",
