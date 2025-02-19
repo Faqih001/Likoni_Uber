@@ -11,6 +11,7 @@ import { fetchAPI } from "@/lib/fetch";
 import { useLocationStore } from "@/store";
 import { PaymentProps } from "@/types/type";
 
+// Payment component to handle payment processing for ride booking
 const Payment = ({
   fullName,
   email,
