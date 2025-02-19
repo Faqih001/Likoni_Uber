@@ -86,6 +86,7 @@ const Payment = ({
             },
           );
 
+          // Confirm payment intent with payment method
           if (paymentIntent.client_secret) {
             const { result } = await fetchAPI("/(api)/(stripe)/pay", {
               method: "POST",
