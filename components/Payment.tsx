@@ -32,6 +32,7 @@ const Payment = ({
     destinationLongitude,
   } = useLocationStore();
 
+  // Get user ID from Clerk authentication
   const { userId } = useAuth();
   const [success, setSuccess] = useState<boolean>(false);
 
