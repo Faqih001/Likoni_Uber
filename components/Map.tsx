@@ -13,9 +13,10 @@ import {
 import { useDriverStore, useLocationStore } from "@/store";
 import { Driver, MarkerData } from "@/types/type";
 
-// Map component to display the map with markers and directions
+// Map component to display the map with markers and directions to the destination
 const directionsAPI = process.env.EXPO_PUBLIC_DIRECTIONS_API_KEY;
 
+// The map component uses the react-native-maps library to display the map
 const Map = () => {
   const {
     userLongitude,
