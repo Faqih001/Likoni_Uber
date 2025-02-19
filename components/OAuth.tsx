@@ -26,6 +26,7 @@ const OAuth = () => {
     Alert.alert(result.success ? "Success" : "Error", result.message);
   };
 
+  // Render the OAuth component with the Google sign-in button
   return (
     <View>
       <View className="flex flex-row justify-center items-center mt-4 gap-x-3">
