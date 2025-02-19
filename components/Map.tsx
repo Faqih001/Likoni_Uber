@@ -34,7 +34,7 @@ const Map = () => {
   // The markers state is used to store the generated markers for each driver
   const [markers, setMarkers] = useState<MarkerData[]>([]);
 
-  
+  // The useEffect hook is used to generate the markers from the driver data
   useEffect(() => {
     if (Array.isArray(drivers)) {
       if (!userLatitude || !userLongitude) return;
