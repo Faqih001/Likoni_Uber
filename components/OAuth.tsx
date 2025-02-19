@@ -16,6 +16,7 @@ const OAuth = () => {
     // The googleOAuth function is used to start the Google OAuth flow
     const result = await googleOAuth(startOAuthFlow);
 
+    // If the result code is "session_exists", redirect to the home screen
     if (result.code === "session_exists") {
       Alert.alert("Success", "Session exists. Redirecting to home screen.");
       router.replace("/(root)/(tabs)/home");
