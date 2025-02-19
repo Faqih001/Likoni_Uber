@@ -55,6 +55,7 @@ const Map = () => {
 
   // The useEffect hook is used to calculate the driver times to the destination
   useEffect(() => {
+    // If the markers and destination coordinates are available, calculate the driver times
     if (
       markers.length > 0 &&
       destinationLatitude !== undefined &&
