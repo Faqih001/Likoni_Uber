@@ -11,6 +11,7 @@ import {
 
 import { InputFieldProps } from "@/types/type";
 
+// Input field component to be used in forms for user input
 const InputField = ({
   label,
   icon,
