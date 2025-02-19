@@ -25,6 +25,7 @@ const Map = () => {
     destinationLatitude,
     destinationLongitude,
   } = useLocationStore();
+  // Driver data is fetched from the API and stored in the driver store using the useDriverStore hook
   const { selectedDriver, setDrivers } = useDriverStore();
 
   const { data: drivers, loading, error } = useFetch<Driver[]>("/(api)/driver");
