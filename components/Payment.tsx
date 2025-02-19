@@ -38,6 +38,7 @@ const Payment = ({
   // State to handle success modal visibility
   const [success, setSuccess] = useState<boolean>(false);
 
+  // Function to open payment sheet
   const openPaymentSheet = async () => {
     await initializePaymentSheet();
 
