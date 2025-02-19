@@ -48,6 +48,7 @@ const Map = () => {
         userLongitude,
       });
 
+      // Set the markers state with the generated markers
       setMarkers(newMarkers);
     }
   }, [drivers, userLatitude, userLongitude]);
