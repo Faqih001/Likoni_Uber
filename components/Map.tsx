@@ -18,6 +18,7 @@ const directionsAPI = process.env.EXPO_PUBLIC_DIRECTIONS_API_KEY;
 
 // The map component uses the react-native-maps library to display the map
 const Map = () => {
+  // It fetches the driver data from the API and generates markers for each driver
   const {
     userLongitude,
     userLatitude,
