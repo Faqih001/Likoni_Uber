@@ -23,6 +23,7 @@ const InputField = ({
   className,
   ...props
 }: InputFieldProps) => {
+  // Return the input field component with the specified props
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
