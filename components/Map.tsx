@@ -30,8 +30,11 @@ const Map = () => {
 
   // The useFetch hook is used to fetch the driver data from the API
   const { data: drivers, loading, error } = useFetch<Driver[]>("/(api)/driver");
+
+  // The markers state is used to store the generated markers for each driver
   const [markers, setMarkers] = useState<MarkerData[]>([]);
 
+  
   useEffect(() => {
     if (Array.isArray(drivers)) {
       if (!userLatitude || !userLongitude) return;
