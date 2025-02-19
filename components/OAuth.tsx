@@ -11,6 +11,7 @@ const OAuth = () => {
   // The useOAuth hook is used to start the OAuth flow with the specified strategy
   const { startOAuthFlow } = useOAuth({ strategy: "oauth_google" });
 
+  // The handleGoogleSignIn function is used to handle the Google sign-in flow
   const handleGoogleSignIn = async () => {
     const result = await googleOAuth(startOAuthFlow);
 
