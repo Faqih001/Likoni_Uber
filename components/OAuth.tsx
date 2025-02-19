@@ -22,6 +22,7 @@ const OAuth = () => {
       router.replace("/(root)/(tabs)/home");
     }
 
+    // Show an alert with the result message
     Alert.alert(result.success ? "Success" : "Error", result.message);
   };
 
