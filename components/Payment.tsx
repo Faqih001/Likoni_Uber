@@ -40,6 +40,7 @@ const Payment = ({
 
   // Function to open payment sheet
   const openPaymentSheet = async () => {
+    // Initialize payment sheet with payment details
     await initializePaymentSheet();
 
     const { error } = await presentPaymentSheet();
