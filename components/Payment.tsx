@@ -46,6 +46,7 @@ const Payment = ({
     // Present payment sheet to user for payment processing
     const { error } = await presentPaymentSheet();
 
+    // Handle payment sheet error if any occurs
     if (error) {
       Alert.alert(`Error code: ${error.code}`, error.message);
     } else {
