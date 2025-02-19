@@ -69,6 +69,7 @@ const Payment = ({
           shouldSavePaymentMethod,
           intentCreationCallback,
         ) => {
+          // Create payment intent and customer on server
           const { paymentIntent, customer } = await fetchAPI(
             "/(api)/(stripe)/create",
             {
