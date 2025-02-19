@@ -91,6 +91,7 @@ const Map = () => {
       </View>
     );
 
+  // If there is an error fetching the data, display the error message
   if (error)
     return (
       <View className="flex justify-between items-center w-full">
