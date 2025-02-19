@@ -61,6 +61,7 @@ const Map = () => {
       destinationLatitude !== undefined &&
       destinationLongitude !== undefined
     ) {
+      // Calculate the driver times to the destination
       calculateDriverTimes({
         markers,
         userLatitude,
