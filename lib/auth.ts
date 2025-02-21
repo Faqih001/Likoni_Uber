@@ -10,6 +10,8 @@ export const tokenCache = {
     // Retrieve token from cache using SecureStore API
     try {
       const item = await SecureStore.getItemAsync(key);
+
+      // Log token retrieval status to console
       if (item) {
         console.log(`${key} was used 🔐 \n`);
       } else {
