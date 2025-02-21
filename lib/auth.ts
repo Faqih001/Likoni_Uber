@@ -43,6 +43,7 @@ export const googleOAuth = async (startOAuthFlow: any) => {
       redirectUrl: Linking.createURL("/(root)/(tabs)/home"),
     });
 
+    // If session ID is created, set active session and user details
     if (createdSessionId) {
       if (setActive) {
         await setActive({ session: createdSessionId });
