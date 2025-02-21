@@ -4,6 +4,7 @@ import { icons } from "@/constants";
 import { formatDate, formatTime } from "@/lib/utils";
 import { Ride } from "@/types/type";
 
+// RideCard component to display ride details
 const RideCard = ({ ride }: { ride: Ride }) => {
   return (
     <View className="flex flex-row items-center justify-center bg-white rounded-lg shadow-sm shadow-neutral-300 mb-3">
