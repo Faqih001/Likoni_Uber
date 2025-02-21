@@ -48,6 +48,7 @@ export const googleOAuth = async (startOAuthFlow: any) => {
       if (setActive) {
         await setActive({ session: createdSessionId });
 
+        // If user details are available, create user account in the backend
         if (signUp.createdUserId) {
           await fetchAPI("/(api)/user", {
             method: "POST",
