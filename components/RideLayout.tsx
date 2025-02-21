@@ -10,6 +10,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Map from "@/components/Map";
 import { icons } from "@/constants";
 
+// RideLayout component to display ride details
 const RideLayout = ({
   title,
   snapPoints,
