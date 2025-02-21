@@ -34,6 +34,7 @@ export const tokenCache = {
   },
 };
 
+// Google OAuth flow to sign in users with Google account
 export const googleOAuth = async (startOAuthFlow: any) => {
   try {
     const { createdSessionId, setActive, signUp } = await startOAuthFlow({
