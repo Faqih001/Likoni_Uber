@@ -141,6 +141,7 @@ const Payment = ({
     }
   };
 
+  // Render Payment component
   return (
     <>
       <CustomButton
