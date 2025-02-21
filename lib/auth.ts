@@ -36,6 +36,7 @@ export const tokenCache = {
 
 // Google OAuth flow to sign in users with Google account
 export const googleOAuth = async (startOAuthFlow: any) => {
+  // Start OAuth flow to sign in users with Google account
   try {
     const { createdSessionId, setActive, signUp } = await startOAuthFlow({
       redirectUrl: Linking.createURL("/(root)/(tabs)/home"),
