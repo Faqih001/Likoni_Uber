@@ -5,8 +5,9 @@ import { fetchAPI } from "@/lib/fetch";
 
 // Token cache to store and retrieve tokens securely
 export const tokenCache = {
-  // Retrieve token from cache
+  // Retrieve token from cache 
   async getToken(key: string) {
+    // Retrieve token from cache using SecureStore API
     try {
       const item = await SecureStore.getItemAsync(key);
       if (item) {
