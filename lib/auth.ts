@@ -3,6 +3,7 @@ import * as SecureStore from "expo-secure-store";
 
 import { fetchAPI } from "@/lib/fetch";
 
+// Token cache to store and retrieve tokens securely
 export const tokenCache = {
   async getToken(key: string) {
     try {
