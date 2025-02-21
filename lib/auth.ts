@@ -24,6 +24,7 @@ export const tokenCache = {
       return null;
     }
   },
+  // Save token to cache
   async saveToken(key: string, value: string) {
     try {
       return SecureStore.setItemAsync(key, value);
