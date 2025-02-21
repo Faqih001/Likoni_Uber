@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 
 // Fetch API with error handling and loading state management
 export const fetchAPI = async (url: string, options?: RequestInit) => {
+  // This function is used to fetch data from an API
   try {
     const response = await fetch(url, options);
     if (!response.ok) {
