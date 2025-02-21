@@ -69,6 +69,7 @@ export const googleOAuth = async (startOAuthFlow: any) => {
       }
     }
 
+    // Return error message if an error occurred while signing in with Google
     return {
       success: false,
       message: "An error occurred while signing in with Google",
