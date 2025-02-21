@@ -135,6 +135,7 @@ const Payment = ({
       returnURL: "myapp://book-ride",
     });
 
+    // Handle payment sheet initialization error if any occurs
     if (!error) {
       // setLoading(true);
     }
