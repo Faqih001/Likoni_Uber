@@ -22,6 +22,7 @@ const RideLayout = ({
 }) => {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
+  // Return JSX to render ride details
   return (
     <GestureHandlerRootView className="flex-1">
       <View className="flex-1 bg-white">
