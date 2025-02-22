@@ -110,6 +110,7 @@ export const calculateDriverTimes = async ({
   // Try to calculate the time and price for each driver based on the user's location and the destination
   try {
     const timesPromises = markers.map(async (marker) => {
+      // Fetch the directions from the driver's location to the user's location
       const responseToUser = await fetch(
         `https://maps.googleapis.com/maps/api/directions/json?origin=${marker.latitude},${marker.longitude}&destination=${userLatitude},${userLongitude}&key=${directionsAPI}`,
       );
