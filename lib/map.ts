@@ -42,6 +42,7 @@ export const calculateRegion = ({
 }) => {
   // If the user's location is not available, return the default region
   if (!userLatitude || !userLongitude) {
+    // Default region for San Francisco
     return {
       latitude: 37.78825,
       longitude: -122.4324,
