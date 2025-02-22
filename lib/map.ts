@@ -26,6 +26,7 @@ export const generateMarkersFromData = ({
   });
 };
 
+//Calculate the region to display on the map based on the user's location and the destination
 export const calculateRegion = ({
   userLatitude,
   userLongitude,
