@@ -19,6 +19,7 @@ export const fetchAPI = async (url: string, options?: RequestInit) => {
   }
 };
 
+// Custom hook to fetch data from an API with loading and error handling
 export const useFetch = <T>(url: string, options?: RequestInit) => {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(false);
