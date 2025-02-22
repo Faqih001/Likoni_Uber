@@ -40,6 +40,7 @@ export const calculateRegion = ({
   destinationLatitude?: number | null;
   destinationLongitude?: number | null;
 }) => {
+  // If the user's location is not available, return the default region
   if (!userLatitude || !userLongitude) {
     return {
       latitude: 37.78825,
