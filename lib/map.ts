@@ -3,6 +3,7 @@ import { Driver, MarkerData } from "@/types/type";
 // This is the API key for the Google Directions API
 const directionsAPI = process.env.EXPO_PUBLIC_DIRECTIONS_API_KEY;
 
+// You can get your own API key by following the instructions here:
 export const generateMarkersFromData = ({
   data,
   userLatitude,
