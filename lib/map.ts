@@ -107,6 +107,7 @@ export const calculateDriverTimes = async ({
   )
     return;
 
+  // Try to calculate the time and price for each driver based on the user's location and the destination
   try {
     const timesPromises = markers.map(async (marker) => {
       const responseToUser = await fetch(
