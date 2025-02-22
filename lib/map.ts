@@ -84,6 +84,7 @@ export const calculateRegion = ({
   };
 };
 
+// Calculate the time and price for each driver based on the user's location and the destination
 export const calculateDriverTimes = async ({
   markers,
   userLatitude,
