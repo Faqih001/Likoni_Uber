@@ -98,6 +98,7 @@ export const calculateDriverTimes = async ({
   destinationLatitude: number | null;
   destinationLongitude: number | null;
 }) => {
+  // If the user's location or the destination is not available, return
   if (
     !userLatitude ||
     !userLongitude ||
