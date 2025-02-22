@@ -51,6 +51,7 @@ export const calculateRegion = ({
     };
   }
 
+  // If the destination is not available, return the region around the user's location
   if (!destinationLatitude || !destinationLongitude) {
     return {
       latitude: userLatitude,
