@@ -75,6 +75,7 @@ export const calculateRegion = ({
   const latitude = (userLatitude + destinationLatitude) / 2;
   const longitude = (userLongitude + destinationLongitude) / 2;
 
+  // Return the region to display on the map
   return {
     latitude,
     longitude,
