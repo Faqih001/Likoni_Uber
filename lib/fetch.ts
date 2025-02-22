@@ -34,6 +34,7 @@ export const useFetch = <T>(url: string, options?: RequestInit) => {
 
     // Try to fetch data from the API and update the state
     try {
+      // Fetch data from the API and update the state
       const result = await fetchAPI(url, options);
       setData(result.data);
     } catch (err) {
