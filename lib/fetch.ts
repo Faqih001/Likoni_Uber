@@ -26,6 +26,7 @@ export const useFetch = <T>(url: string, options?: RequestInit) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Fetch data from the API and update the state
   const fetchData = useCallback(async () => {
     setLoading(true);
     setError(null);
