@@ -61,6 +61,7 @@ export const calculateRegion = ({
     };
   }
 
+  // Calculate the region to display on the map based on the user's location and the destination
   const minLat = Math.min(userLatitude, destinationLatitude);
   const maxLat = Math.max(userLatitude, destinationLatitude);
   const minLng = Math.min(userLongitude, destinationLongitude);
