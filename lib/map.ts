@@ -71,6 +71,7 @@ export const calculateRegion = ({
   const latitudeDelta = (maxLat - minLat) * 1.3; // Adding some padding
   const longitudeDelta = (maxLng - minLng) * 1.3; // Adding some padding
 
+  // Calculate the center of the region based on the user's location and the destination
   const latitude = (userLatitude + destinationLatitude) / 2;
   const longitude = (userLongitude + destinationLongitude) / 2;
 
