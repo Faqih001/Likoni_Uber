@@ -44,6 +44,7 @@ export const useFetch = <T>(url: string, options?: RequestInit) => {
     }
   }, [url, options]);
 
+  // Fetch data when the component mounts useEffect hook with an empty dependency array
   useEffect(() => {
     fetchData();
   }, [fetchData]);
