@@ -67,6 +67,7 @@ export const calculateRegion = ({
   const minLng = Math.min(userLongitude, destinationLongitude);
   const maxLng = Math.max(userLongitude, destinationLongitude);
 
+  // Adding some padding to the region to make sure the markers are visible
   const latitudeDelta = (maxLat - minLat) * 1.3; // Adding some padding
   const longitudeDelta = (maxLng - minLng) * 1.3; // Adding some padding
 
