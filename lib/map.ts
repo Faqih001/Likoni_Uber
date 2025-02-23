@@ -123,6 +123,7 @@ export const calculateDriverTimes = async ({
       );
       // Parse the JSON response for data to destination location
       const dataToDestination = await responseToDestination.json();
+      // Calculate the total time and price for the driver
       const timeToDestination =
         dataToDestination.routes[0].legs[0].duration.value; // Time in seconds
 
