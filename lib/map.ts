@@ -131,6 +131,7 @@ export const calculateDriverTimes = async ({
       const totalTime = (timeToUser + timeToDestination) / 60; // Total time in minutes
       const price = (totalTime * 0.5).toFixed(2); // Calculate price based on time
 
+      // Return the marker with the total time and price
       return { ...marker, time: totalTime, price };
     });
 
