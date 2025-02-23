@@ -30,6 +30,7 @@ export const useLocationStore = create<LocationStore>((set) => ({
     if (selectedDriver) clearSelectedDriver();
   },
 
+  // Set the destination location of the user
   setDestinationLocation: ({
     latitude,
     longitude,
