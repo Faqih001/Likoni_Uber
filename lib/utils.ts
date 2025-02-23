@@ -28,6 +28,7 @@ export function formatTime(minutes: number): string {
   }
 }
 
+// Format the date to be a string
 export function formatDate(dateString: string): string {
   const date = new Date(dateString);
   const day = date.getDate();
