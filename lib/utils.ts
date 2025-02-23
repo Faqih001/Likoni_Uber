@@ -13,6 +13,7 @@ export const sortRides = (rides: Ride[]): Ride[] => {
   return result.reverse();
 };
 
+// Filter rides by date and time
 export function formatTime(minutes: number): string {
   const formattedMinutes = +minutes?.toFixed(0) || 0;
 
