@@ -9,6 +9,7 @@ export const sortRides = (rides: Ride[]): Ride[] => {
     return dateB.getTime() - dateA.getTime();
   });
 
+  // return the sorted array of rides
   return result.reverse();
 };
 
