@@ -15,6 +15,7 @@ export const sortRides = (rides: Ride[]): Ride[] => {
 
 // Filter rides by date and time
 export function formatTime(minutes: number): string {
+  // If the minutes are less than 60, return the minutes
   const formattedMinutes = +minutes?.toFixed(0) || 0;
 
   if (formattedMinutes < 60) {
