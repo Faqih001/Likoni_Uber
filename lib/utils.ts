@@ -2,6 +2,7 @@ import { Ride } from "@/types/type";
 
 // Sort rides by date and time
 export const sortRides = (rides: Ride[]): Ride[] => {
+  // result is the sorted array of rides
   const result = rides.sort((a, b) => {
     const dateA = new Date(`${a.created_at}T${a.ride_time}`);
     const dateB = new Date(`${b.created_at}T${b.ride_time}`);
