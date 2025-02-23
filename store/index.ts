@@ -2,6 +2,7 @@ import { create } from "zustand";
 
 import { DriverStore, LocationStore, MarkerData } from "@/types/type";
 
+// Location Store to store user and destination location
 export const useLocationStore = create<LocationStore>((set) => ({
   userLatitude: null,
   userLongitude: null,
