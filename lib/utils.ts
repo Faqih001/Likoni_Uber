@@ -47,6 +47,7 @@ export function formatDate(dateString: string): string {
     "November",
     "December",
   ];
+  // Get the month and year
   const month = monthNames[date.getMonth()];
   const year = date.getFullYear();
 
