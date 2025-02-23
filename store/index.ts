@@ -52,6 +52,7 @@ export const useLocationStore = create<LocationStore>((set) => ({
   },
 }));
 
+// Driver Store to store drivers and selected driver
 export const useDriverStore = create<DriverStore>((set) => ({
   drivers: [] as MarkerData[],
   selectedDriver: null,
