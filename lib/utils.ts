@@ -30,6 +30,7 @@ export function formatTime(minutes: number): string {
 
 // Format the date to be a string
 export function formatDate(dateString: string): string {
+  // Create a new date object
   const date = new Date(dateString);
   const day = date.getDate();
   const monthNames = [
