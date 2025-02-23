@@ -51,5 +51,6 @@ export function formatDate(dateString: string): string {
   const month = monthNames[date.getMonth()];
   const year = date.getFullYear();
 
+  // Return the formatted date
   return `${day < 10 ? "0" + day : day} ${month} ${year}`;
 }
